@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+		
+	<bean id="polarBearBean" 
+		class="bearaop.com.PolarBear">
+	</bean>
+	
+	<bean id="mountainBearBean"
+		class="bearaop.com.MountainBear">
+	</bean>
+	
+	<bean id="beforeMethodBean"
+		class="bearaop.com.BeforeMethod">
+	</bean>
+	
+	<bean id="bearServiceLiveBean" 
+		class="bearaop.com.BearServiceLive">
+	</bean>
+	
+	<!-- Enable AspectJ style of Spring AOP -->
+	<aop:aspectj-autoproxy />
+	
+	<bean name="bearAspectPointCut"
+		class="bearaop.com.aspect.BearAspectPointcut">
+	</bean>
+</beans>
