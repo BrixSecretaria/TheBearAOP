@@ -17,6 +17,7 @@ public class PolarBear extends BearServiceLive{
 	public void bath() {
 		// TODO Auto-generated method stub
 		System.out.println("  Polar Bear bathes in cold water.");
+		System.out.println(" Polar Bear is a Bear.");
 	}
 
 }
