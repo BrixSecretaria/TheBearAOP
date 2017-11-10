@@ -20,6 +20,7 @@ public class PolarBear extends BearServiceLive{
 		System.out.println("  Polar Bear bathes in cold water.");
 		System.out.println(" Polar Bear is a Bear.");
 		System.out.println(" New branch of polar bear");
+		System.out.println(" Changed username.");
 	}
 
 }
